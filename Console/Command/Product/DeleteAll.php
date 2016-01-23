@@ -11,7 +11,7 @@ use Magento\ImportExport\Model\Import;
  * @package FireGento\FastSimpleImport2\Console\Command
  *
  */
-class Delete extends AbstractImportCommand
+class DeleteAll extends AbstractImportCommand
 {
 
 

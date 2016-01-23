@@ -10,9 +10,12 @@
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="delete" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Product\Delete</item>
+                <item name="delete_product_all" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Product\DeleteAll</item>
+                <item name="delete_customers_all" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Customer\DeleteAll</item>
+
                 <item name="import_configurable" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Product\ImportConfigurable</item>
                 <item name="import_simple" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Product\ImportSimple</item>
+                <item name="import_customer" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Customer\ImportCustomer</item>
 
             </argument>
         </arguments>

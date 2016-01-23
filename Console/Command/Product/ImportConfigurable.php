@@ -43,6 +43,8 @@ class ImportConfigurable extends AbstractImportCommand
             'product_websites' => 'base',
             'name' => 'FireGento Test Product Configurable',
             'price' => '10.000',
+            'configurable_variation_labels'=>'Color'
+
         );
 
         $colors = array("blue","black");
