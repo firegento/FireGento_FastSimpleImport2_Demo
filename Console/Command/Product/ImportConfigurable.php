@@ -35,23 +35,44 @@ class ImportConfigurable extends AbstractImportCommand
      */
     protected function getEntities()
     {
-        $data = [];
-        for ($i = 1; $i <= 10; $i++) {
-            $data[] = array(
-                'sku' => 'FIREGENTO-' . $i,
+        $simpleProducts = [];
+        $configurableProduct = array(
+            'sku' => 'CONFIG-Product',
+            'attribute_set_code' => 'Default',
+            'product_type' => 'configurable',
+            'product_websites' => 'base',
+            'name' => 'FireGento Test Product Configurable',
+            'price' => '10.000',
+        );
+
+        $colors = array("blue","black");
+        $variationsString = '';
+        for ($i = 0; $i < 2; $i++) {
+
+            $color = $colors[$i];
+            $sku = 'SIMPLE-' . $color;
+            $simpleProducts[] = array(
+                'sku' => $sku,
                 'attribute_set_code' => 'Default',
                 'product_type' => 'simple',
                 'product_websites' => 'base',
-                'name' => 'FireGento Test Product ' . $i,
+                'name' => 'FireGento Test Product Simple - ' . $color,
                 'price' => '14.0000',
-                //'visibility' => 'Catalog, Search',
-                //'tax_class_name' => 'Taxable Goods',
-                //'product_online' => '1',
-                //'weight' => '1.0000',
-                //'short_description' => NULL,
-                //'description' => '',
+                'additional_attributes' => "color=".$color
+
             );
+            $variationsString.= 'sku='.$sku.',color='.$color."|";
         }
+        $configurableProduct["configurable_variations"] = $variationsString;
+
+
+
+
+
+
+        $data = array_merge($simpleProducts,array($configurableProduct));
+
+
         return $data;
     }
 }
