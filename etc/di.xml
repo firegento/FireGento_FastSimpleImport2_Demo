@@ -10,7 +10,7 @@
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="testCommand" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\TestCommand</item>
+                <item name="testCommand" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\ImportSimpleProducts</item>
             </argument>
         </arguments>
     </type>
