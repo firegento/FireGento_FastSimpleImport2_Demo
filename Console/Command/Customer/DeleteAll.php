@@ -35,11 +35,13 @@ class DeleteAll extends AbstractImportCommand
     {
 
         $customerFactory = $this->objectManager->create('Magento\Customer\Model\CustomerFactory');
-        $productCollection = $customerFactory->create()->getCollection();
+        $customerCollection = $customerFactory->create()->getCollection();
         $data = [];
-        foreach ($productCollection as $product) {
+        foreach ($customerCollection as $customer) {
             $data[] = array(
-                'sku' => $product->getSku()
+                'email' => $customer->getData('email'),
+                '_website' => 'base',
+                '_store' => 'default',
             );
         }
         return $data;

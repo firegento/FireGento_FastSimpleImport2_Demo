@@ -57,7 +57,7 @@ class ImportCustomer extends AbstractImportCommand
                 'suffix' => '',
                 'taxvat' => '',
                 'updated_at' => '2015-12-26 18:05:23',
-                'website_id' => '',
+                'website_id' => '1',
                 'password' => 'TestTest',
 
             );
