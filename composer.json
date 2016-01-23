@@ -1,0 +1,25 @@
+{
+  "name": "firegento/fastsimpleimport2demo",
+  "description": "Wrapper for Magento2 ImportExport functionality, which imports products and customers from arrays",
+  "homepage": "https://github.com/magento-hackathon/FireGento_FastSimpleImport2_Demo",
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0"
+  },
+  "type": "magento2-module",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Team FireGento",
+      "email": "team@firegento.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "FireGento\\FastSimpleImport2Demo\\": ""
+    }
+  }
+}
+
