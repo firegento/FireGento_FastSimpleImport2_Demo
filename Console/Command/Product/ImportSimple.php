@@ -3,15 +3,15 @@
  * Copyright © 2016 FireGento e.V. - All rights reserved.
  * See LICENSE.md bundled with this module for license details.
  */
-namespace FireGento\FastSimpleImport2Demo\Console\Command;
-
+namespace FireGento\FastSimpleImport2Demo\Console\Command\Product;
+use FireGento\FastSimpleImport2Demo\Console\Command\AbstractImportCommand;
 use Magento\ImportExport\Model\Import;
 /**
  * Class TestCommand
  * @package FireGento\FastSimpleImport2\Console\Command
  *
  */
-class ImportSimpleProducts extends AbstractImportCommand
+class ImportSimple extends AbstractImportCommand
 {
 
 
