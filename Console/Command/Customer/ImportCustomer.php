@@ -19,7 +19,7 @@ class ImportCustomer extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('firegento:fastsimpleimport2demo:importcustomers')
+        $this->setName('fastsimpleimport2demo:customers:import')
             ->setDescription('Import Customer ');
 
         $this->setBehavior(Import::BEHAVIOR_APPEND);
@@ -36,7 +36,7 @@ class ImportCustomer extends AbstractImportCommand
         $data = [];
         for ($i = 1; $i <= 1; $i++) {
             $data[] = array(
-                'email' => 'elias.kotlyar@gmail.com',
+                'email' => 'testemail@firegento.de',
                 '_website' => 'base',
                 '_store' => 'default',
                 'confirmation' => '',

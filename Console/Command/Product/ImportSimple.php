@@ -21,7 +21,7 @@ class ImportSimple extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('firegento:fastsimpleimport2demo:importsimpleproducts')
+        $this->setName('fastsimpleimport2demo:products:importsimple')
             ->setDescription('Import Simple Products ');
 
         $this->setBehavior(Import::BEHAVIOR_APPEND);

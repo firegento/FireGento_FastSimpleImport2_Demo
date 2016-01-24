@@ -21,7 +21,7 @@ class ImportConfigurable extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('firegento:fastsimpleimport2demo:importconfigproducts')
+        $this->setName('fastsimpleimport2demo:products:importconfigurable')
             ->setDescription('Import Configurable Products ');
 
         $this->setBehavior(Import::BEHAVIOR_APPEND);

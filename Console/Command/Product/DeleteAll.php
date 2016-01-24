@@ -19,7 +19,7 @@ class DeleteAll extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('firegento:fastsimpleimport2demo:deleteproducts')
+        $this->setName('fastsimpleimport2demo:products:deleteall')
             ->setDescription('Delete Products ');
 
         $this->setBehavior(Import::BEHAVIOR_DELETE);
