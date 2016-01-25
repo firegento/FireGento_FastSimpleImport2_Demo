@@ -9,6 +9,9 @@ Demo module for calling FireGento_FastSimpleImport2 via command line
 ### Import configurable products:
 `bin/magento fastsimpleimport2demo:products:importconfigurable`
 
+### Import bundle products:
+`bin/magento fastsimpleimport2demo:products:importbundle`
+
 ### Delete all products in Catalog(Warning : really all Products):
 `bin/magento fastsimpleimport2demo:products:deleteall`
 
