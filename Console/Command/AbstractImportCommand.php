@@ -55,6 +55,20 @@ abstract class AbstractImportCommand extends Command
         parent::__construct();
     }
 
+    public function arrayToAttributeString($array)
+    {
+
+
+        $attributes_str = NULL;
+        foreach ($array as $attribute => $value) {
+
+            $attributes_str .= "$attribute=$value,";
+
+        }
+
+        return $attributes_str;
+    }
+
     /**
      * @param InputInterface $input
      * @param OutputInterface $output
@@ -136,5 +150,7 @@ abstract class AbstractImportCommand extends Command
     {
         $this->entityCode = $entityCode;
     }
+
+
 
 }
