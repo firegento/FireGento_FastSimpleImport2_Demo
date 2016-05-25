@@ -1,6 +1,17 @@
 # FireGento_FastSimpleImport2_Demo
 Demo module for calling FireGento_FastSimpleImport2 via command line
 
+Installation Instructions with Composer
+---------------------------------------------
+
+    composer config repositories.firegento_fastsimpleimportdemo vcs https://github.com/firegento/FireGento_FastSimpleImport2_Demo
+    composer require firegento/fastsimpleimport2demo dev-master
+    bin/magento module:enable FireGento_FastSimpleImport2Demo
+    bin/magento setup:upgrade
+
+
+
+
 ## Products
 
 ### Import simple products:
