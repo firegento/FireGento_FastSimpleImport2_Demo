@@ -112,6 +112,8 @@ abstract class AbstractImportCommand extends Command
         $output->write($importerModel->getErrorMessages());
 
         $output->writeln('Import finished. Elapsed time: ' . round(microtime(true) - $time, 2) . 's' . "\n");
+        $this->afterFinishImport();
+
     }
 
     /**
@@ -152,5 +154,8 @@ abstract class AbstractImportCommand extends Command
     }
 
 
+    public function afterFinishImport(){
+
+    }
 
 }

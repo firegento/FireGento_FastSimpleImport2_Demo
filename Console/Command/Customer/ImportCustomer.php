@@ -64,6 +64,12 @@ class ImportCustomer extends AbstractImportCommand
         }
         return $data;
     }
+    public function afterFinishImport(){
+        $indexerFactory = $this->objectManager->create('Magento\Indexer\Model\IndexerFactory');
+        $indexer = $indexerFactory->create();
+        $indexer->load("customer_grid");
+        $indexer->reindexAll();
+    }
 }
 
 
