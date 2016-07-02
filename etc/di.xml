@@ -18,6 +18,7 @@
                 <item name="import_bundle" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Product\ImportBundle</item>
 
                 <item name="import_customer" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Customer\ImportCustomer</item>
+                <item name="import_category" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Category\ImportCategory</item>
 
             </argument>
         </arguments>
