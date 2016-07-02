@@ -29,9 +29,12 @@ Installation Instructions with Composer
 
 ## Customers
 
-### Import customers(Please reindex after importing):
+### Import customers
 `bin/magento fastsimpleimport2demo:customers:import`
 
 ### Delete all customers:
 `bin/magento fastsimpleimport2demo:customers:deleteall`
+
+### Import Categorys(BETA,work in Progress):
+`bin/magento fastsimpleimport2demo:category:import`
 
