@@ -20,6 +20,9 @@
                 <item name="import_customer" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Customer\ImportCustomer</item>
                 <item name="import_category" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Category\ImportCategory</item>
 
+                <item name="export_products" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Product\ExportProducts</item>
+                <item name="export_orders" xsi:type="object">FireGento\FastSimpleImport2Demo\Console\Command\Orders\ExportOrders</item>
+
             </argument>
         </arguments>
     </type>

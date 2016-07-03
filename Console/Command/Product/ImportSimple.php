@@ -36,7 +36,7 @@ class ImportSimple extends AbstractImportCommand
         $this->setName('fastsimpleimport2demo:products:importsimple')
             ->setDescription('Import Simple Products ');
 
-        $this->setBehavior(Import::BEHAVIOR_APPEND);
+        $this->setBehavior(Import::BEHAVIOR_ADD_UPDATE);
         $this->setEntityCode('catalog_product');
 
         parent::configure();
