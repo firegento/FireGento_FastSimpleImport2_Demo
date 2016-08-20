@@ -5,9 +5,9 @@
  *  * See LICENSE.md bundled with this module for license details.
  *
  */
-namespace FireGento\FastSimpleImport2Demo\Console\Command\Product;
-use FireGento\FastSimpleImport2Demo\Console\Command\AbstractExportCommand;
-use FireGento\FastSimpleImport2Demo\Console\Command\AbstractImportCommand;
+namespace FireGento\FastSimpleImportDemo\Console\Command\Product;
+use FireGento\FastSimpleImportDemo\Console\Command\AbstractExportCommand;
+use FireGento\FastSimpleImportDemo\Console\Command\AbstractImportCommand;
 use Magento\Framework\App\ObjectManagerFactory;
 use Magento\ImportExport\Model\Import;
 use Magento\Catalog\Api\ProductAttributeOptionManagementInterface;
@@ -22,7 +22,7 @@ class ExportProducts extends AbstractExportCommand
 
     protected function configure()
     {
-        $this->setName('fastsimpleimport2demo:products:export')
+        $this->setName('fastsimpleimportdemo:products:export')
             ->setDescription('Export Products ');
         $this->setEntityCode('catalog_product');
 

@@ -1,5 +1,5 @@
 {
-  "name": "firegento/fastsimpleimport2demo",
+  "name": "firegento/fastsimpleimportdemo",
   "description": "Wrapper for Magento2 ImportExport functionality, which imports products and customers from arrays",
   "homepage": "https://github.com/magento-hackathon/FireGento_FastSimpleImport2_Demo",
   "require": {
@@ -18,7 +18,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "FireGento\\FastSimpleImport2Demo\\": ""
+      "FireGento\\FastSimpleImportDemo\\": ""
     }
   }
 }

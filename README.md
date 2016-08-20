@@ -1,12 +1,12 @@
-# FireGento_FastSimpleImport2_Demo
-Demo module for calling FireGento_FastSimpleImport2 via command line
+# FireGento_FastSimpleImport_Demo
+Demo module for calling FireGento_FastSimpleImport via command line
 
 Installation Instructions with Composer
 ---------------------------------------------
 
     composer config repositories.firegento_fastsimpleimportdemo vcs https://github.com/firegento/FireGento_FastSimpleImport2_Demo
-    composer require firegento/fastsimpleimport2demo dev-master
-    bin/magento module:enable FireGento_FastSimpleImport2Demo
+    composer require firegento/fastsimpleimportdemo dev-master
+    bin/magento module:enable FireGento_FastSimpleImportDemo
     bin/magento setup:upgrade
 
 
@@ -15,26 +15,26 @@ Installation Instructions with Composer
 ## Products
 
 ### Import simple products:
-`bin/magento fastsimpleimport2demo:products:importsimple`
+`bin/magento fastsimpleimportdemo:products:importsimple`
 
 ### Import configurable products:
-`bin/magento fastsimpleimport2demo:products:importconfigurable`
+`bin/magento fastsimpleimportdemo:products:importconfigurable`
 
 ### Import bundle products:
-`bin/magento fastsimpleimport2demo:products:importbundle`
+`bin/magento fastsimpleimportdemo:products:importbundle`
 
 ### Delete all products in Catalog(Warning : really all Products):
-`bin/magento fastsimpleimport2demo:products:deleteall`
+`bin/magento fastsimpleimportdemo:products:deleteall`
 
 
 ## Customers
 
 ### Import customers
-`bin/magento fastsimpleimport2demo:customers:import`
+`bin/magento fastsimpleimportdemo:customers:import`
 
 ### Delete all customers:
-`bin/magento fastsimpleimport2demo:customers:deleteall`
+`bin/magento fastsimpleimportdemo:customers:deleteall`
 
 ### Import Categorys(BETA,work in Progress):
-`bin/magento fastsimpleimport2demo:category:import`
+`bin/magento fastsimpleimportdemo:category:import`
 

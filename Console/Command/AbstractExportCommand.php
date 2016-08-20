@@ -5,7 +5,7 @@
  *  * See LICENSE.md bundled with this module for license details.
  *
  */
-namespace FireGento\FastSimpleImport2Demo\Console\Command;
+namespace FireGento\FastSimpleImportDemo\Console\Command;
 
 use Magento\Backend\App\Area\FrontNameResolver;
 use Magento\Framework\App\ObjectManager\ConfigLoader;
@@ -84,7 +84,7 @@ abstract class AbstractExportCommand extends Command
         $time = microtime(true);
 
         /** @var \FireGento\FastSimpleImport2\Model\Importer $importerModel */
-        $importerModel = $this->objectManager->create('FireGento\FastSimpleExport2\Model\Exporter');
+        $importerModel = $this->objectManager->create('FireGento\FastSimpleExport\Model\Exporter');
 
         $importerModel->setEntityCode($this->getEntityCode());
 

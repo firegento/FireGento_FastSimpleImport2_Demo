@@ -3,8 +3,8 @@
  * Copyright © 2016 FireGento e.V. - All rights reserved.
  * See LICENSE.md bundled with this module for license details.
  */
-namespace FireGento\FastSimpleImport2Demo\Console\Command\Product;
-use FireGento\FastSimpleImport2Demo\Console\Command\AbstractImportCommand;
+namespace FireGento\FastSimpleImportDemo\Console\Command\Product;
+use FireGento\FastSimpleImportDemo\Console\Command\AbstractImportCommand;
 use Magento\ImportExport\Model\Import;
 /**
  * Class TestCommand
@@ -21,7 +21,7 @@ class ImportConfigurable extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('fastsimpleimport2demo:products:importconfigurable')
+        $this->setName('fastsimpleimportdemo:products:importconfigurable')
             ->setDescription('Import Configurable Products ');
 
         $this->setBehavior(Import::BEHAVIOR_APPEND);

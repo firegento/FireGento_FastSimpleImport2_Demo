@@ -3,7 +3,7 @@
  * Copyright © 2016 FireGento e.V. - All rights reserved.
  * See LICENSE.md bundled with this module for license details.
  */
-namespace FireGento\FastSimpleImport2Demo\Console\Command;
+namespace FireGento\FastSimpleImportDemo\Console\Command;
 
 use Magento\Backend\App\Area\FrontNameResolver;
 use Magento\Framework\App\ObjectManager\ConfigLoader;
@@ -95,7 +95,7 @@ abstract class AbstractImportCommand extends Command
         $time = microtime(true);
 
         /** @var \FireGento\FastSimpleImport2\Model\Importer $importerModel */
-        $importerModel = $this->objectManager->create('FireGento\FastSimpleImport2\Model\Importer');
+        $importerModel = $this->objectManager->create('FireGento\FastSimpleImport\Model\Importer');
 
         $productsArray = $this->getEntities();
 
