@@ -4,8 +4,10 @@
  * See LICENSE.md bundled with this module for license details.
  */
 namespace FireGento\FastSimpleImportDemo\Console\Command\Product;
+
 use FireGento\FastSimpleImportDemo\Console\Command\AbstractImportCommand;
 use Magento\ImportExport\Model\Import;
+
 /**
  * Class TestCommand
  * @package FireGento\FastSimpleImport2\Console\Command
@@ -13,10 +15,6 @@ use Magento\ImportExport\Model\Import;
  */
 class ImportConfigurable extends AbstractImportCommand
 {
-
-
-
-
 
 
     protected function configure()
@@ -43,11 +41,11 @@ class ImportConfigurable extends AbstractImportCommand
             'product_websites' => 'base',
             'name' => 'FireGento Test Product Configurable',
             'price' => '10.000',
-            'configurable_variation_labels'=>'Color'
+            'configurable_variation_labels' => 'Color'
 
         );
 
-        $colors = array("blue","black");
+        $colors = array("blue", "black");
         $variationsString = '';
         for ($i = 0; $i < 2; $i++) {
 
@@ -60,19 +58,15 @@ class ImportConfigurable extends AbstractImportCommand
                 'product_websites' => 'base',
                 'name' => 'FireGento Test Product Simple - ' . $color,
                 'price' => '14.0000',
-                'additional_attributes' => "color=".$color
+                'additional_attributes' => array('color' => $color)
 
             );
-            $variationsString.= 'sku='.$sku.',color='.$color."|";
+            $variationsString[] = array('sku' => $sku, 'color' => $color);
         }
         $configurableProduct["configurable_variations"] = $variationsString;
 
 
-
-
-
-
-        $data = array_merge($simpleProducts,array($configurableProduct));
+        $data = array_merge($simpleProducts, array($configurableProduct));
 
 
         return $data;

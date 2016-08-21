@@ -94,13 +94,15 @@ abstract class AbstractImportCommand extends Command
 
         $time = microtime(true);
 
-        /** @var \FireGento\FastSimpleImport2\Model\Importer $importerModel */
+        /** @var \FireGento\FastSimpleImport\Model\Importer $importerModel */
         $importerModel = $this->objectManager->create('FireGento\FastSimpleImport\Model\Importer');
 
         $productsArray = $this->getEntities();
 
         $importerModel->setBehavior($this->getBehavior());
         $importerModel->setEntityCode($this->getEntityCode());
+        $adapterFactory = $this->objectManager->create('FireGento\FastSimpleImport\Model\Adapters\NestedArrayAdapterFactory');
+        $importerModel->setImportAdapterFactory($adapterFactory);
 
         try {
             $importerModel->processImport($productsArray);
