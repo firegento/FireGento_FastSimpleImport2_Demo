@@ -16,6 +16,7 @@
                 <item name="import_configurable" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Product\ImportConfigurable</item>
                 <item name="import_simple" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Product\ImportSimple</item>
                 <item name="import_bundle" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Product\ImportBundle</item>
+                <item name="import_multiselect" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Product\ImportMultiselect</item>
 
                 <item name="import_customer" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Customer\ImportCustomer</item>
                 <item name="import_category" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Category\ImportCategory</item>

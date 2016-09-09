@@ -35,6 +35,9 @@ Installation Instructions with Composer(Master Branch)
 ### Import bundle products:
 `bin/magento fastsimpleimportdemo:products:importbundle`
 
+### Import simple Products with multiselect-attributes:
+`bin/magento fastsimpleimportdemo:products:importmultiselect`
+
 ### Delete all products in Catalog(Warning : really all Products):
 `bin/magento fastsimpleimportdemo:products:deleteall`
 
