@@ -5,7 +5,7 @@
  *  * See LICENSE.md bundled with this module for license details.
  *
  */
-namespace FireGento\FastSimpleImportDemo\Console\Command\Orders;
+namespace FireGento\FastSimpleImportDemo\Console\Command\Customer;
 use Magento\ImportExport\Model\Import;
 use FireGento\FastSimpleImportDemo\Console\Command\AbstractExportCommand;
 /**
@@ -13,15 +13,15 @@ use FireGento\FastSimpleImportDemo\Console\Command\AbstractExportCommand;
  * @package FireGento\FastSimpleImport2\Console\Command
  *
  */
-class ExportOrders extends AbstractExportCommand
+class ExportCustomer extends AbstractExportCommand
 {
 
 
     protected function configure()
     {
-        $this->setName('fastsimpleimportdemo:orders:export')
-            ->setDescription('Export Orders ');
-        $this->setEntityCode('order');
+        $this->setName('fastsimpleimportdemo:customers:export')
+            ->setDescription('Export Customers');
+        $this->setEntityCode('customer');
 
         parent::configure();
     }
