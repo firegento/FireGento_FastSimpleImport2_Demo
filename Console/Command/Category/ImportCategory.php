@@ -45,6 +45,7 @@ class ImportCategory extends AbstractImportCommand
             'meta_description' => 'Meta Test',
             'available_sort_by' => 'position',
             'default_sort_by' => 'position',
+            'is_anchor' => '1'
         );
         return $data;
     }
