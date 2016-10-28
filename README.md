@@ -41,6 +41,8 @@ Installation Instructions with Composer(Master Branch)
 ### Delete all products in Catalog(Warning : really all Products):
 `bin/magento fastsimpleimportdemo:products:deleteall`
 
+### Import products from CSV File:
+`bin/magento fastsimpleimportdemo:products:importcsv`
 
 ## Customers
 
@@ -50,6 +52,8 @@ Installation Instructions with Composer(Master Branch)
 ### Delete all customers:
 `bin/magento fastsimpleimportdemo:customers:deleteall`
 
-### Import Categorys(BETA,work in Progress):
+## Categories
+
+### Import Categories:
 `bin/magento fastsimpleimportdemo:category:import`
 
