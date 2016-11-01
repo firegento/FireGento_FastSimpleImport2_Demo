@@ -72,7 +72,7 @@ class ImportCsv extends AbstractImportCommand
 
     protected function readCSV()
     {
-        $csvObj = Reader::createFromString($this->readFile(self::IMPORT_FILE));
+        $csvObj = Reader::createFromString($this->readFile(static::IMPORT_FILE));
         $csvObj->setDelimiter(',');
         $results = $csvObj->fetchAssoc();
         return $results;
