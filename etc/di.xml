@@ -22,6 +22,10 @@
                 <item name="import_customer" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Customer\ImportCustomer</item>
                 <item name="import_category" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Category\ImportCategory</item>
 
+
+                <item name="import_category_multi" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Category\ImportCategoryMultiStoreView</item>
+
+
                 <item name="export_products" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Product\ExportProducts</item>
                 <item name="export_orders" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Orders\ExportOrders</item>
                 <item name="export_customers" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Customer\ExportCustomer</item>
