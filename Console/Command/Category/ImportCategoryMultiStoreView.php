@@ -15,7 +15,7 @@ use Magento\ImportExport\Model\Import;
  * @package FireGento\FastSimpleImport2\Console\Command
  *
  */
-class ImportCategory extends AbstractImportCommand
+class ImportCategoryMultiStoreView extends AbstractImportCommand
 {
 
 
@@ -35,10 +35,9 @@ class ImportCategory extends AbstractImportCommand
      */
     protected function getEntities()
     {
-        
         $data[] = array(
             '_root' => 'Default Category',
-            '_category' => 'FireGento TestCategory',
+            '_category' => 'FireGento TestCategory DE',
             'description' => 'Test2',
             'is_active' => '1',
             'include_in_menu' => '1',
@@ -46,6 +45,11 @@ class ImportCategory extends AbstractImportCommand
             'available_sort_by' => 'position',
             'default_sort_by' => 'position',
             'is_anchor' => '1'
+        );
+        $data[] = array(
+            '_store' => 'en',
+            'name' => 'FireGento TestCategory EN',
+            'description' => 'StoreViewLevel'
         );
         return $data;
     }

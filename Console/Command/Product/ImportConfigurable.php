@@ -33,42 +33,50 @@ class ImportConfigurable extends AbstractImportCommand
      */
     protected function getEntities()
     {
-        $simpleProducts = [];
-        $configurableProduct = array(
+        $products = [];
+        $products [] = array(
+            'sku' => "SIMPLE-BLUE-SMALL",
+            'attribute_set_code' => 'Default',
+            'product_type' => 'simple',
+            'product_websites' => 'base',
+            'name' => 'FireGento Simple Product Blue,Size Small',
+            'price' => '1.0000',
+            'color' => 'blue',
+            'size' => 'S'
+        );
+        $products [] = array(
+            'sku' => "SIMPLE-RED-MIDDLE",
+            'attribute_set_code' => 'Default',
+            'product_type' => 'simple',
+            'product_websites' => 'base',
+            'name' => 'FireGento Simple Product Red,Size Middle',
+            'price' => '1.0000',
+            'color' => 'red',
+            'size' => 'M'
+        );
+
+        $products [] = array(
             'sku' => 'CONFIG-Product',
             'attribute_set_code' => 'Default',
             'product_type' => 'configurable',
             'product_websites' => 'base',
             'name' => 'FireGento Test Product Configurable',
             'price' => '10.000',
-            'configurable_variation_labels' => 'Color'
+            'configurable_variation_labels' => 'Color',
+            'configurable_variations' => array(
+                array(
+                    'sku' => 'SIMPLE-BLUE-SMALL',
+                    'color' => 'blue',
+                    'size' => 'S'),
+                array(
+                    'sku' => 'SIMPLE-RED-MIDDLE',
+                    'color' => 'red',
+                    'size' => 'M'),
+            )
 
         );
 
-        $colors = array("blue", "black");
-        $variationsString = '';
-        for ($i = 0; $i < 2; $i++) {
 
-            $color = $colors[$i];
-            $sku = 'SIMPLE-' . $color;
-            $simpleProducts[] = array(
-                'sku' => $sku,
-                'attribute_set_code' => 'Default',
-                'product_type' => 'simple',
-                'product_websites' => 'base',
-                'name' => 'FireGento Test Product Simple - ' . $color,
-                'price' => '14.0000',
-                'additional_attributes' => array('color' => $color)
-
-            );
-            $variationsString[] = array('sku' => $sku, 'color' => $color);
-        }
-        $configurableProduct["configurable_variations"] = $variationsString;
-
-
-        $data = array_merge($simpleProducts, array($configurableProduct));
-
-
-        return $data;
+        return $products;
     }
 }
