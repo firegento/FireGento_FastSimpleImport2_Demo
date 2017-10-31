@@ -5,7 +5,7 @@
   "require": {
     "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0",
     "firegento/fastsimpleimport": "*",
-    "league/csv": "^8.0"
+    "league/csv": "^9.0"
   },
   "type": "magento2-module",
   "license": "GPL-3.0",
