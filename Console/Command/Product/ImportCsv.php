@@ -7,6 +7,7 @@ use FireGento\FastSimpleImportDemo\Console\Command\AbstractImportCommand;
 use Magento\Framework\App\ObjectManagerFactory;
 use Magento\ImportExport\Model\Import;
 use League\Csv\Reader;
+use League\Csv\Statement;
 
 class ImportCsv extends AbstractImportCommand
 {
@@ -74,7 +75,8 @@ class ImportCsv extends AbstractImportCommand
     {
         $csvObj = Reader::createFromString($this->readFile(static::IMPORT_FILE));
         $csvObj->setDelimiter(',');
-        $results = $csvObj->fetchAssoc();
+        $csvObj->setHeaderOffset(0);
+        $results = (new Statement())->process($reader);
         return $results;
 
     }
