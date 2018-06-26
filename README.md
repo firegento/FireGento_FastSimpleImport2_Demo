@@ -49,9 +49,6 @@ Installation Instructions with Composer(Master Branch)
 ### Import customers
 `bin/magento fastsimpleimportdemo:customers:import`
 
-### Import products from CSV File:(currently building)
-`bin/magento fastsimpleimportdemo:customers:importcsv`
-
 
 
 ### Delete all customers:
@@ -62,3 +59,5 @@ Installation Instructions with Composer(Master Branch)
 ### Import Categories:
 `bin/magento fastsimpleimportdemo:category:import`
 
+### Import products from CSV File:(currently building)
+`bin/magento fastsimpleimportdemo:customers:importcsv`
