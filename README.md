@@ -60,4 +60,4 @@ Installation Instructions with Composer(Master Branch)
 `bin/magento fastsimpleimportdemo:category:import`
 
 ### Import products from CSV File:(currently building)
-`bin/magento fastsimpleimportdemo:customers:importcsv`
+`bin/magento fastsimpleimportdemo:category:importcsv`
