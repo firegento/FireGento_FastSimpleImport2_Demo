@@ -2,7 +2,6 @@
 Demo module for calling FireGento_FastSimpleImport via command line
 
 
-
 Installation Instructions with Composer
 ---------------------------------------------
 
