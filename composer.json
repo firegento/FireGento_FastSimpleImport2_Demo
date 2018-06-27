@@ -11,12 +11,12 @@
   "license": "GPL-3.0",
   "authors": [
     {
-      "name": "Team firegento",
-      "email": "hamilton@aiart.io"
-    },
-    {
       "name": "Team FireGento",
       "email": "team@firegento.com"
+    },
+    {
+      "name": "Team AI Art",
+      "email": "hamilton@aiart.io"
     }
   ],
   "autoload": {
