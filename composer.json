@@ -1,5 +1,5 @@
 {
-  "name": "sereneum/fastsimpleimportdemo",
+  "name": "firegento/fastsimpleimportdemo",
   "description": "Wrapper for Magento2 ImportExport functionality, which imports products and customers from arrays",
   "homepage": "https://github.com/magento-hackathon/FireGento_FastSimpleImport2_Demo",
   "require": {
@@ -11,7 +11,7 @@
   "license": "GPL-3.0",
   "authors": [
     {
-      "name": "Team Sereneum",
+      "name": "Team firegento",
       "email": "hamilton@aiart.io"
     },
     {
@@ -24,7 +24,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Sereneum\\FastSimpleImportDemo\\": ""
+      "firegento\\FastSimpleImportDemo\\": ""
     }
   }
 }

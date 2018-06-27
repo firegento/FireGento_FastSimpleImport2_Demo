@@ -14,9 +14,6 @@ use Magento\ImportExport\Model\Import;
 class DeleteAll extends AbstractImportCommand
 {
 
-
-
-
     protected function configure()
     {
         $this->setName('fastsimpleimportdemo:products:deleteall')

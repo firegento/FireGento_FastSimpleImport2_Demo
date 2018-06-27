@@ -34,9 +34,7 @@ class ImportCategoryCsv extends AbstractImportCommand
         \Magento\Framework\App\Filesystem\DirectoryList $directory_list
     )
     {
-
         parent::__construct($objectManagerFactory);
-
 
         $this->readFactory = $readFactory;
 

@@ -2,10 +2,11 @@
 Demo module for calling FireGento_FastSimpleImport via command line
 
 
+
 Installation Instructions with Composer
 ---------------------------------------------
 
-    composer require sereneum/fastsimpleimportdemo
+    composer require firegento/fastsimpleimportdemo
     bin/magento module:enable FireGento_FastSimpleImportDemo
     bin/magento setup:upgrade
     
@@ -15,8 +16,8 @@ Installation Instructions with Composer
 Installation Instructions with Composer(Master Branch)
 ---------------------------------------------
 
-    composer config repositories.firegento_fastsimpleimportdemo vcs https://github.com/sereneum/FireGento_FastSimpleImport2_Demo
-    composer require sereneum/fastsimpleimportdemo dev-master
+    composer config repositories.firegento_fastsimpleimportdemo vcs https://github.com/firegento/FireGento_FastSimpleImport2_Demo
+    composer require firegento/fastsimpleimportdemo dev-master
     bin/magento module:enable FireGento_FastSimpleImportDemo
     bin/magento setup:upgrade
 
