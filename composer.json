@@ -3,7 +3,7 @@
   "description": "Wrapper for Magento2 ImportExport functionality, which imports products and customers from arrays",
   "homepage": "https://github.com/magento-hackathon/FireGento_FastSimpleImport2_Demo",
   "require": {
-    "php": "~5.5.0|~5.6.0|~7.0|~7.1",
+    "php": "~5.6|~7.0|~7.1",
     "firegento/fastsimpleimport": "*",
     "league/csv": "^8.0"
   },
