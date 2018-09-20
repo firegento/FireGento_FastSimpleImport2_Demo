@@ -13,6 +13,10 @@
     {
       "name": "Team FireGento",
       "email": "team@firegento.com"
+    },
+    {
+      "name": "Team AI Art",
+      "email": "hamilton@aiart.io"
     }
   ],
   "autoload": {
@@ -20,7 +24,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "FireGento\\FastSimpleImportDemo\\": ""
+      "Firegento\\FastSimpleImportDemo\\": ""
     }
   }
 }
