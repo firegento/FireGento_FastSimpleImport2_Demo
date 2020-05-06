@@ -57,3 +57,12 @@ Installation Instructions with Composer(Master Branch)
 ### Import Categories:
 `bin/magento fastsimpleimportdemo:category:import`
 
+#### Multi Store Environment
+
+`bin/magento fastsimpleimportdemo:category:import:multistoreview`
+
+This assumes that you have a store view with code "en". If this is not the case, please adapat
+`Console/Command/Category/ImportCategoryMultiStoreView.php` *before* running this command.
+
+
+
