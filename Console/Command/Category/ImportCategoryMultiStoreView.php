@@ -21,7 +21,7 @@ class ImportCategoryMultiStoreView extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('fastsimpleimportdemo:category:import')
+        $this->setName('fastsimpleimportdemo:category:import:multistoreview')
             ->setDescription('Import Category');
 
         $this->setBehavior(Import::BEHAVIOR_APPEND);
