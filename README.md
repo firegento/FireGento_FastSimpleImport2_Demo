@@ -1,6 +1,6 @@
 # FireGento_FastSimpleImport_Demo
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Demo module for calling FireGento_FastSimpleImport via command line
 
@@ -83,6 +83,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/brosenberger"><img src="https://avatars2.githubusercontent.com/u/2969243?v=4" width="100px;" alt=""/><br /><sub><b>Benjamin Rosenberger</b></sub></a><br /><a href="https://github.com/firegento/FireGento_FastSimpleImport2_Demo/commits?author=brosenberger" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/sandeepsingh510"><img src="https://avatars3.githubusercontent.com/u/43433180?v=4" width="100px;" alt=""/><br /><sub><b>sandeepsingh510</b></sub></a><br /><a href="https://github.com/firegento/FireGento_FastSimpleImport2_Demo/commits?author=sandeepsingh510" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/hafeez3000"><img src="https://avatars3.githubusercontent.com/u/805214?v=4" width="100px;" alt=""/><br /><sub><b>Abdul Hafeez</b></sub></a><br /><a href="https://github.com/firegento/FireGento_FastSimpleImport2_Demo/commits?author=hafeez3000" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.integer-net.de/agentur/andreas-von-studnitz/"><img src="https://avatars1.githubusercontent.com/u/662059?v=4" width="100px;" alt=""/><br /><sub><b>Andreas von Studnitz</b></sub></a><br /><a href="https://github.com/firegento/FireGento_FastSimpleImport2_Demo/commits?author=avstudnitz" title="Code">💻</a></td>
   </tr>
 </table>
 
