@@ -1,0 +1,78 @@
+{
+  "projectName": "FireGento_FastSimpleImport2_Demo",
+  "projectOwner": "firegento",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "EliasKotlyar",
+      "name": "Elias Kotlyar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9529505?v=4",
+      "profile": "https://github.com/EliasKotlyar",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "brosenberger",
+      "name": "Benjamin Rosenberger",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2969243?v=4",
+      "profile": "https://github.com/brosenberger",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sandeepsingh510",
+      "name": "sandeepsingh510",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/43433180?v=4",
+      "profile": "https://github.com/sandeepsingh510",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "hafeez3000",
+      "name": "Abdul Hafeez",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/805214?v=4",
+      "profile": "https://github.com/hafeez3000",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "avstudnitz",
+      "name": "Andreas von Studnitz",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/662059?v=4",
+      "profile": "http://www.integer-net.de/agentur/andreas-von-studnitz/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "amenk",
+      "name": "Alexander Menk",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1087128?v=4",
+      "profile": "http://www.twitter.com/s3lf",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "kkrieger85",
+      "name": "Kevin Krieger",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4435523?v=4",
+      "profile": "https://github.com/kkrieger85",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
