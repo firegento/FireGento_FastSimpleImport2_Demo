@@ -11,6 +11,7 @@
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="delete_product_all" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Product\DeleteAll</item>
+                <item name="delete_product_selection" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Product\DeleteSelection</item>
                 <item name="delete_customers_all" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Customer\DeleteAll</item>
 
                 <item name="import_configurable" xsi:type="object">FireGento\FastSimpleImportDemo\Console\Command\Product\ImportConfigurable</item>

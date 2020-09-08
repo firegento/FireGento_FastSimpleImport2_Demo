@@ -14,7 +14,7 @@ use Magento\ImportExport\Model\Import;
  * @package FireGento\FastSimpleImport2\Console\Command
  *
  */
-class Delete extends AbstractImportCommand
+class DeleteSelection extends AbstractImportCommand
 {
     const IMPORT_FILE = "importDelete.csv";
 
@@ -48,7 +48,7 @@ class Delete extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('fastsimpleimportdemo:products:delete')->setDescription('Delete Products based on sku');
+        $this->setName('fastsimpleimportdemo:products:deleteSelection')->setDescription('Delete Products based on SKU list');
 
         $this->setBehavior(Import::BEHAVIOR_DELETE);
         $this->setEntityCode('catalog_product');
@@ -61,7 +61,13 @@ class Delete extends AbstractImportCommand
      */
     protected function getEntities()
     {
-        $csvIterationObject = $this->readCSV();
+        try{
+            $csvIterationObject = $this->readCSV();
+        }catch (\Exception $exception){
+            echo $exception->getMessage();
+            return [];
+        }
+
         $data = [];
         foreach ($csvIterationObject as $row) {
             $data[] = $row;
