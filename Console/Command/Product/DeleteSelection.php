@@ -73,6 +73,8 @@ class DeleteSelection extends AbstractImportCommand
             $data[] = $row;
         }
 
+        echo PHP_EOL.'sku list to be deleted: '.implode(',',array_column($data,'sku')).PHP_EOL;
+
         return $data;
     }
 
