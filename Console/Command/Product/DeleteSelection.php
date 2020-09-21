@@ -61,6 +61,8 @@ class DeleteSelection extends AbstractImportCommand
         $this->setDefinition([
             new InputOption('file', null, InputOption::VALUE_OPTIONAL,
                 'absolute path of file to be imported for sku list'),
+            new InputOption('force', 'f', InputOption::VALUE_NONE,
+                'Force deletion'),
         ]);
 
         parent::configure();
@@ -90,6 +92,12 @@ class DeleteSelection extends AbstractImportCommand
         }
         echo PHP_EOL.'sku list to be deleted: '.implode(',',array_column($data,'sku')).PHP_EOL;
 
+        if(!$this->isForced()){
+            echo PHP_EOL.'this is dry-run mode, no entites returned'.PHP_EOL;
+            return [];
+        }
+
+        echo PHP_EOL.'this is not dry-run mode, all entities returned'.PHP_EOL;
         return $data;
     }
 
@@ -130,6 +138,10 @@ class DeleteSelection extends AbstractImportCommand
             return file_exists($this->input->getOption('file'));
         }
         return false;
+    }
+
+    protected function isForced(){
+        return $this->input->getOption('force');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
